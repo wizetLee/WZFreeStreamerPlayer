@@ -1,0 +1,6 @@
+framework module Pods_WZAudioPlayer {
+  umbrella header "Pods-WZAudioPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

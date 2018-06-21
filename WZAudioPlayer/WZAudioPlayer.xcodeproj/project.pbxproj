@@ -1,0 +1,927 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		407EEDE620B96614009FE00F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEDE520B96614009FE00F /* AppDelegate.m */; };
+		407EEDE920B96614009FE00F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEDE820B96614009FE00F /* ViewController.m */; };
+		407EEDEC20B96614009FE00F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407EEDEA20B96614009FE00F /* Main.storyboard */; };
+		407EEDEE20B96614009FE00F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407EEDED20B96614009FE00F /* Assets.xcassets */; };
+		407EEDF120B96614009FE00F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407EEDEF20B96614009FE00F /* LaunchScreen.storyboard */; };
+		407EEDF420B96614009FE00F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEDF320B96614009FE00F /* main.m */; };
+		407EEDFE20B96614009FE00F /* WZAudioPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEDFD20B96614009FE00F /* WZAudioPlayerTests.m */; };
+		407EEE0920B96614009FE00F /* WZAudioPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE0820B96614009FE00F /* WZAudioPlayerUITests.m */; };
+		407EEE6620B96623009FE00F /* JZFMAudioListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE1920B96623009FE00F /* JZFMAudioListModel.m */; };
+		407EEE6720B96623009FE00F /* JZFMAudioTitleMarquee.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE1A20B96623009FE00F /* JZFMAudioTitleMarquee.m */; };
+		407EEE6820B96623009FE00F /* AudioData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 407EEE1C20B96623009FE00F /* AudioData.plist */; };
+		407EEE6920B96623009FE00F /* JZFMDretailAudioPlayerContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE1D20B96623009FE00F /* JZFMDretailAudioPlayerContentView.m */; };
+		407EEE6B20B96624009FE00F /* JZFMAudioPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE2220B96623009FE00F /* JZFMAudioPlaylistViewController.m */; };
+		407EEE6C20B96624009FE00F /* WZToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE2320B96623009FE00F /* WZToast.m */; };
+		407EEE6D20B96624009FE00F /* JZFMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE2420B96623009FE00F /* JZFMDetailViewController.m */; };
+		407EEE6E20B96624009FE00F /* JZPlaylistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE2B20B96623009FE00F /* JZPlaylistItem.m */; };
+		407EEE6F20B96624009FE00F /* JZAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE2E20B96623009FE00F /* JZAudioController.m */; };
+		407EEE7020B96624009FE00F /* JZAudioPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE2F20B96623009FE00F /* JZAudioPlayerManager.m */; };
+		407EEE7120B96624009FE00F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE3220B96623009FE00F /* Reachability.m */; };
+		407EEE7220B96624009FE00F /* FSParseRssPodcastFeedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE3320B96623009FE00F /* FSParseRssPodcastFeedRequest.m */; };
+		407EEE7320B96624009FE00F /* http_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE3520B96623009FE00F /* http_stream.cpp */; };
+		407EEE7420B96624009FE00F /* FSPlaylistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE3620B96623009FE00F /* FSPlaylistItem.m */; };
+		407EEE7520B96624009FE00F /* audio_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE3720B96623009FE00F /* audio_stream.cpp */; };
+		407EEE7620B96624009FE00F /* id3_parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE3920B96623009FE00F /* id3_parser.cpp */; };
+		407EEE7720B96624009FE00F /* FSCheckContentTypeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE3A20B96623009FE00F /* FSCheckContentTypeRequest.m */; };
+		407EEE7820B96624009FE00F /* stream_configuration.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE3B20B96623009FE00F /* stream_configuration.cpp */; };
+		407EEE7920B96624009FE00F /* input_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE3D20B96623009FE00F /* input_stream.cpp */; };
+		407EEE7A20B96624009FE00F /* FSAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE4020B96623009FE00F /* FSAudioController.m */; };
+		407EEE7B20B96624009FE00F /* file_output.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE4120B96623009FE00F /* file_output.cpp */; };
+		407EEE7C20B96624009FE00F /* caching_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE4220B96623009FE00F /* caching_stream.cpp */; };
+		407EEE7D20B96624009FE00F /* FSXMLHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE4620B96623009FE00F /* FSXMLHttpRequest.m */; };
+		407EEE7E20B96624009FE00F /* FSAudioStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE4920B96623009FE00F /* FSAudioStream.mm */; };
+		407EEE7F20B96624009FE00F /* audio_queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE4B20B96623009FE00F /* audio_queue.cpp */; };
+		407EEE8020B96624009FE00F /* file_stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE4D20B96623009FE00F /* file_stream.cpp */; };
+		407EEE8120B96624009FE00F /* FSParsePlaylistRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE4E20B96623009FE00F /* FSParsePlaylistRequest.m */; };
+		407EEE8220B96624009FE00F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 407EEE5320B96623009FE00F /* Info.plist */; };
+		407EEE8320B96624009FE00F /* JZAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE5520B96623009FE00F /* JZAudioPlayer.m */; };
+		407EEE8420B96624009FE00F /* NSDate+JZTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE5720B96623009FE00F /* NSDate+JZTimestamp.m */; };
+		407EEE8520B96624009FE00F /* JZAudioPlayerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE5820B96623009FE00F /* JZAudioPlayerItem.m */; };
+		407EEE8620B96624009FE00F /* JZFreeStreamerPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE5A20B96623009FE00F /* JZFreeStreamerPlayer.m */; };
+		407EEE8720B96624009FE00F /* JZCircularProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE5F20B96623009FE00F /* JZCircularProgressLayer.m */; };
+		407EEE8820B96624009FE00F /* JZRemoteCommandManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE6220B96623009FE00F /* JZRemoteCommandManager.m */; };
+		407EEE8920B96624009FE00F /* JZFMDretailAudioPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE6320B96623009FE00F /* JZFMDretailAudioPlayerControlView.m */; };
+		407EEE8A20B96624009FE00F /* JZFMAudioPlaylistView.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE6520B96623009FE00F /* JZFMAudioPlaylistView.m */; };
+		407EEE8D20B9663B009FE00F /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 407EEE8C20B9663B009FE00F /* libxml2.tbd */; };
+		407EEE9920B96734009FE00F /* JZTransition_FadePresent.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE9620B96734009FE00F /* JZTransition_FadePresent.m */; };
+		407EEE9A20B96734009FE00F /* JZTransition_FadeDismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = 407EEE9720B96734009FE00F /* JZTransition_FadeDismiss.m */; };
+		40DEFA5220BB81FF007E9864 /* icon_FM_DynamicLine.gif in Resources */ = {isa = PBXBuildFile; fileRef = 40DEFA5120BB81FF007E9864 /* icon_FM_DynamicLine.gif */; };
+		550B9AB3EFD06A0F3462B10D /* Pods_WZAudioPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505B2A8620006711951E02C1 /* Pods_WZAudioPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		407EEDFA20B96614009FE00F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407EEDD920B96614009FE00F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 407EEDE020B96614009FE00F;
+			remoteInfo = WZAudioPlayer;
+		};
+		407EEE0520B96614009FE00F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 407EEDD920B96614009FE00F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 407EEDE020B96614009FE00F;
+			remoteInfo = WZAudioPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		335547CF0B15491BBA19AE9B /* Pods-WZAudioPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZAudioPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WZAudioPlayer/Pods-WZAudioPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		407EEDE120B96614009FE00F /* WZAudioPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WZAudioPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		407EEDE420B96614009FE00F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		407EEDE520B96614009FE00F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		407EEDE720B96614009FE00F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		407EEDE820B96614009FE00F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		407EEDEB20B96614009FE00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		407EEDED20B96614009FE00F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		407EEDF020B96614009FE00F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		407EEDF220B96614009FE00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407EEDF320B96614009FE00F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		407EEDF920B96614009FE00F /* WZAudioPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZAudioPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		407EEDFD20B96614009FE00F /* WZAudioPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZAudioPlayerTests.m; sourceTree = "<group>"; };
+		407EEDFF20B96614009FE00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407EEE0420B96614009FE00F /* WZAudioPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WZAudioPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		407EEE0820B96614009FE00F /* WZAudioPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZAudioPlayerUITests.m; sourceTree = "<group>"; };
+		407EEE0A20B96614009FE00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407EEE1820B96623009FE00F /* WZToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZToast.h; sourceTree = "<group>"; };
+		407EEE1920B96623009FE00F /* JZFMAudioListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFMAudioListModel.m; sourceTree = "<group>"; };
+		407EEE1A20B96623009FE00F /* JZFMAudioTitleMarquee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFMAudioTitleMarquee.m; sourceTree = "<group>"; };
+		407EEE1C20B96623009FE00F /* AudioData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AudioData.plist; sourceTree = "<group>"; };
+		407EEE1D20B96623009FE00F /* JZFMDretailAudioPlayerContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFMDretailAudioPlayerContentView.m; sourceTree = "<group>"; };
+		407EEE1E20B96623009FE00F /* JZFMDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFMDetailViewController.h; sourceTree = "<group>"; };
+		407EEE1F20B96623009FE00F /* JZFMAudioPlaylistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFMAudioPlaylistView.h; sourceTree = "<group>"; };
+		407EEE2120B96623009FE00F /* JZFMDretailAudioPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFMDretailAudioPlayerControlView.h; sourceTree = "<group>"; };
+		407EEE2220B96623009FE00F /* JZFMAudioPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFMAudioPlaylistViewController.m; sourceTree = "<group>"; };
+		407EEE2320B96623009FE00F /* WZToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZToast.m; sourceTree = "<group>"; };
+		407EEE2420B96623009FE00F /* JZFMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFMDetailViewController.m; sourceTree = "<group>"; };
+		407EEE2520B96623009FE00F /* JZFMDretailAudioPlayerContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFMDretailAudioPlayerContentView.h; sourceTree = "<group>"; };
+		407EEE2620B96623009FE00F /* JZFMAudioTitleMarquee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFMAudioTitleMarquee.h; sourceTree = "<group>"; };
+		407EEE2720B96623009FE00F /* JZFMAudioListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFMAudioListModel.h; sourceTree = "<group>"; };
+		407EEE2820B96623009FE00F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		407EEE2920B96623009FE00F /* JZFMAudioPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFMAudioPlaylistViewController.h; sourceTree = "<group>"; };
+		407EEE2B20B96623009FE00F /* JZPlaylistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZPlaylistItem.m; sourceTree = "<group>"; };
+		407EEE2D20B96623009FE00F /* JZFreeStreamerPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZFreeStreamerPlayer.h; sourceTree = "<group>"; };
+		407EEE2E20B96623009FE00F /* JZAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAudioController.m; sourceTree = "<group>"; };
+		407EEE2F20B96623009FE00F /* JZAudioPlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAudioPlayerManager.m; sourceTree = "<group>"; };
+		407EEE3120B96623009FE00F /* audio_queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_queue.h; sourceTree = "<group>"; };
+		407EEE3220B96623009FE00F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		407EEE3320B96623009FE00F /* FSParseRssPodcastFeedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSParseRssPodcastFeedRequest.m; sourceTree = "<group>"; };
+		407EEE3420B96623009FE00F /* FSXMLHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSXMLHttpRequest.h; sourceTree = "<group>"; };
+		407EEE3520B96623009FE00F /* http_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = http_stream.cpp; sourceTree = "<group>"; };
+		407EEE3620B96623009FE00F /* FSPlaylistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPlaylistItem.m; sourceTree = "<group>"; };
+		407EEE3720B96623009FE00F /* audio_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audio_stream.cpp; sourceTree = "<group>"; };
+		407EEE3820B96623009FE00F /* FSParsePlaylistRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSParsePlaylistRequest.h; sourceTree = "<group>"; };
+		407EEE3920B96623009FE00F /* id3_parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = id3_parser.cpp; sourceTree = "<group>"; };
+		407EEE3A20B96623009FE00F /* FSCheckContentTypeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCheckContentTypeRequest.m; sourceTree = "<group>"; };
+		407EEE3B20B96623009FE00F /* stream_configuration.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = stream_configuration.cpp; sourceTree = "<group>"; };
+		407EEE3C20B96623009FE00F /* file_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_stream.h; sourceTree = "<group>"; };
+		407EEE3D20B96623009FE00F /* input_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = input_stream.cpp; sourceTree = "<group>"; };
+		407EEE3E20B96623009FE00F /* input_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input_stream.h; sourceTree = "<group>"; };
+		407EEE3F20B96623009FE00F /* file_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_output.h; sourceTree = "<group>"; };
+		407EEE4020B96623009FE00F /* FSAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAudioController.m; sourceTree = "<group>"; };
+		407EEE4120B96623009FE00F /* file_output.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = file_output.cpp; sourceTree = "<group>"; };
+		407EEE4220B96623009FE00F /* caching_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = caching_stream.cpp; sourceTree = "<group>"; };
+		407EEE4320B96623009FE00F /* audio_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audio_stream.h; sourceTree = "<group>"; };
+		407EEE4420B96623009FE00F /* http_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_stream.h; sourceTree = "<group>"; };
+		407EEE4520B96623009FE00F /* FSPlaylistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPlaylistItem.h; sourceTree = "<group>"; };
+		407EEE4620B96623009FE00F /* FSXMLHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSXMLHttpRequest.m; sourceTree = "<group>"; };
+		407EEE4720B96623009FE00F /* FSParseRssPodcastFeedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSParseRssPodcastFeedRequest.h; sourceTree = "<group>"; };
+		407EEE4820B96623009FE00F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		407EEE4920B96623009FE00F /* FSAudioStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FSAudioStream.mm; sourceTree = "<group>"; };
+		407EEE4A20B96623009FE00F /* id3_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = id3_parser.h; sourceTree = "<group>"; };
+		407EEE4B20B96623009FE00F /* audio_queue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audio_queue.cpp; sourceTree = "<group>"; };
+		407EEE4C20B96623009FE00F /* FSCheckContentTypeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCheckContentTypeRequest.h; sourceTree = "<group>"; };
+		407EEE4D20B96623009FE00F /* file_stream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = file_stream.cpp; sourceTree = "<group>"; };
+		407EEE4E20B96623009FE00F /* FSParsePlaylistRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSParsePlaylistRequest.m; sourceTree = "<group>"; };
+		407EEE4F20B96623009FE00F /* FSAudioStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAudioStream.h; sourceTree = "<group>"; };
+		407EEE5020B96623009FE00F /* FreeStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeStreamer.h; sourceTree = "<group>"; };
+		407EEE5120B96623009FE00F /* FSAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAudioController.h; sourceTree = "<group>"; };
+		407EEE5220B96623009FE00F /* stream_configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_configuration.h; sourceTree = "<group>"; };
+		407EEE5320B96623009FE00F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407EEE5420B96623009FE00F /* caching_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = caching_stream.h; sourceTree = "<group>"; };
+		407EEE5520B96623009FE00F /* JZAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAudioPlayer.m; sourceTree = "<group>"; };
+		407EEE5620B96623009FE00F /* JZRemoteCommandManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZRemoteCommandManager.h; sourceTree = "<group>"; };
+		407EEE5720B96623009FE00F /* NSDate+JZTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JZTimestamp.m"; sourceTree = "<group>"; };
+		407EEE5820B96623009FE00F /* JZAudioPlayerItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZAudioPlayerItem.m; sourceTree = "<group>"; };
+		407EEE5920B96623009FE00F /* JZCircularProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZCircularProgressLayer.h; sourceTree = "<group>"; };
+		407EEE5A20B96623009FE00F /* JZFreeStreamerPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFreeStreamerPlayer.m; sourceTree = "<group>"; };
+		407EEE5B20B96623009FE00F /* JZAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAudioController.h; sourceTree = "<group>"; };
+		407EEE5C20B96623009FE00F /* JZPlaylistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZPlaylistItem.h; sourceTree = "<group>"; };
+		407EEE5D20B96623009FE00F /* JZAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAudioPlayer.h; sourceTree = "<group>"; };
+		407EEE5E20B96623009FE00F /* JZAudioPlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAudioPlayerManager.h; sourceTree = "<group>"; };
+		407EEE5F20B96623009FE00F /* JZCircularProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZCircularProgressLayer.m; sourceTree = "<group>"; };
+		407EEE6020B96623009FE00F /* NSDate+JZTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JZTimestamp.h"; sourceTree = "<group>"; };
+		407EEE6120B96623009FE00F /* JZAudioPlayerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZAudioPlayerItem.h; sourceTree = "<group>"; };
+		407EEE6220B96623009FE00F /* JZRemoteCommandManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZRemoteCommandManager.m; sourceTree = "<group>"; };
+		407EEE6320B96623009FE00F /* JZFMDretailAudioPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFMDretailAudioPlayerControlView.m; sourceTree = "<group>"; };
+		407EEE6520B96623009FE00F /* JZFMAudioPlaylistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZFMAudioPlaylistView.m; sourceTree = "<group>"; };
+		407EEE8C20B9663B009FE00F /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		407EEE9520B96734009FE00F /* JZTransition_FadeDismiss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZTransition_FadeDismiss.h; sourceTree = "<group>"; };
+		407EEE9620B96734009FE00F /* JZTransition_FadePresent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZTransition_FadePresent.m; sourceTree = "<group>"; };
+		407EEE9720B96734009FE00F /* JZTransition_FadeDismiss.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZTransition_FadeDismiss.m; sourceTree = "<group>"; };
+		407EEE9820B96734009FE00F /* JZTransition_FadePresent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZTransition_FadePresent.h; sourceTree = "<group>"; };
+		40DEFA5120BB81FF007E9864 /* icon_FM_DynamicLine.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = icon_FM_DynamicLine.gif; sourceTree = "<group>"; };
+		505B2A8620006711951E02C1 /* Pods_WZAudioPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WZAudioPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E43A4984EC9D8B5021EC8E5 /* Pods-WZAudioPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZAudioPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WZAudioPlayer/Pods-WZAudioPlayer.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		407EEDDE20B96614009FE00F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407EEE8D20B9663B009FE00F /* libxml2.tbd in Frameworks */,
+				550B9AB3EFD06A0F3462B10D /* Pods_WZAudioPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407EEDF620B96614009FE00F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407EEE0120B96614009FE00F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33F526CAF5FC036B1819963D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				335547CF0B15491BBA19AE9B /* Pods-WZAudioPlayer.debug.xcconfig */,
+				7E43A4984EC9D8B5021EC8E5 /* Pods-WZAudioPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		407EEDD820B96614009FE00F = {
+			isa = PBXGroup;
+			children = (
+				407EEDE320B96614009FE00F /* WZAudioPlayer */,
+				407EEDFC20B96614009FE00F /* WZAudioPlayerTests */,
+				407EEE0720B96614009FE00F /* WZAudioPlayerUITests */,
+				407EEDE220B96614009FE00F /* Products */,
+				407EEE8B20B9663A009FE00F /* Frameworks */,
+				33F526CAF5FC036B1819963D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		407EEDE220B96614009FE00F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				407EEDE120B96614009FE00F /* WZAudioPlayer.app */,
+				407EEDF920B96614009FE00F /* WZAudioPlayerTests.xctest */,
+				407EEE0420B96614009FE00F /* WZAudioPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		407EEDE320B96614009FE00F /* WZAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				407EEDE420B96614009FE00F /* AppDelegate.h */,
+				407EEDE520B96614009FE00F /* AppDelegate.m */,
+				407EEDE720B96614009FE00F /* ViewController.h */,
+				407EEDE820B96614009FE00F /* ViewController.m */,
+				407EEE1620B96623009FE00F /* Player */,
+				407EEDEA20B96614009FE00F /* Main.storyboard */,
+				407EEDED20B96614009FE00F /* Assets.xcassets */,
+				407EEDEF20B96614009FE00F /* LaunchScreen.storyboard */,
+				407EEDF220B96614009FE00F /* Info.plist */,
+				407EEE2820B96623009FE00F /* PrefixHeader.pch */,
+				407EEDF320B96614009FE00F /* main.m */,
+			);
+			path = WZAudioPlayer;
+			sourceTree = "<group>";
+		};
+		407EEDFC20B96614009FE00F /* WZAudioPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				407EEDFD20B96614009FE00F /* WZAudioPlayerTests.m */,
+				407EEDFF20B96614009FE00F /* Info.plist */,
+			);
+			path = WZAudioPlayerTests;
+			sourceTree = "<group>";
+		};
+		407EEE0720B96614009FE00F /* WZAudioPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				407EEE0820B96614009FE00F /* WZAudioPlayerUITests.m */,
+				407EEE0A20B96614009FE00F /* Info.plist */,
+			);
+			path = WZAudioPlayerUITests;
+			sourceTree = "<group>";
+		};
+		407EEE1620B96623009FE00F /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				407EEE1720B96623009FE00F /* Transition */,
+				407EEE1B20B96623009FE00F /* Source */,
+				407EEE1820B96623009FE00F /* WZToast.h */,
+				407EEE2320B96623009FE00F /* WZToast.m */,
+				407EEE2A20B96623009FE00F /* Helper */,
+				407EEE2720B96623009FE00F /* JZFMAudioListModel.h */,
+				407EEE1920B96623009FE00F /* JZFMAudioListModel.m */,
+				407EEE1E20B96623009FE00F /* JZFMDetailViewController.h */,
+				407EEE2420B96623009FE00F /* JZFMDetailViewController.m */,
+				407EEE2920B96623009FE00F /* JZFMAudioPlaylistViewController.h */,
+				407EEE2220B96623009FE00F /* JZFMAudioPlaylistViewController.m */,
+				407EEE2520B96623009FE00F /* JZFMDretailAudioPlayerContentView.h */,
+				407EEE1D20B96623009FE00F /* JZFMDretailAudioPlayerContentView.m */,
+				407EEE2620B96623009FE00F /* JZFMAudioTitleMarquee.h */,
+				407EEE1A20B96623009FE00F /* JZFMAudioTitleMarquee.m */,
+				407EEE2120B96623009FE00F /* JZFMDretailAudioPlayerControlView.h */,
+				407EEE6320B96623009FE00F /* JZFMDretailAudioPlayerControlView.m */,
+				407EEE6520B96623009FE00F /* JZFMAudioPlaylistView.m */,
+				407EEE1F20B96623009FE00F /* JZFMAudioPlaylistView.h */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		407EEE1720B96623009FE00F /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				407EEE9520B96734009FE00F /* JZTransition_FadeDismiss.h */,
+				407EEE9720B96734009FE00F /* JZTransition_FadeDismiss.m */,
+				407EEE9820B96734009FE00F /* JZTransition_FadePresent.h */,
+				407EEE9620B96734009FE00F /* JZTransition_FadePresent.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		407EEE1B20B96623009FE00F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				40DEFA5120BB81FF007E9864 /* icon_FM_DynamicLine.gif */,
+				407EEE1C20B96623009FE00F /* AudioData.plist */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		407EEE2A20B96623009FE00F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				407EEE2C20B96623009FE00F /* Transition */,
+				407EEE3020B96623009FE00F /* FreeStreamer */,
+				407EEE5920B96623009FE00F /* JZCircularProgressLayer.h */,
+				407EEE5F20B96623009FE00F /* JZCircularProgressLayer.m */,
+				407EEE5A20B96623009FE00F /* JZFreeStreamerPlayer.m */,
+				407EEE2D20B96623009FE00F /* JZFreeStreamerPlayer.h */,
+				407EEE5B20B96623009FE00F /* JZAudioController.h */,
+				407EEE2E20B96623009FE00F /* JZAudioController.m */,
+				407EEE5C20B96623009FE00F /* JZPlaylistItem.h */,
+				407EEE2B20B96623009FE00F /* JZPlaylistItem.m */,
+				407EEE5D20B96623009FE00F /* JZAudioPlayer.h */,
+				407EEE5520B96623009FE00F /* JZAudioPlayer.m */,
+				407EEE6120B96623009FE00F /* JZAudioPlayerItem.h */,
+				407EEE5820B96623009FE00F /* JZAudioPlayerItem.m */,
+				407EEE5E20B96623009FE00F /* JZAudioPlayerManager.h */,
+				407EEE2F20B96623009FE00F /* JZAudioPlayerManager.m */,
+				407EEE5620B96623009FE00F /* JZRemoteCommandManager.h */,
+				407EEE6220B96623009FE00F /* JZRemoteCommandManager.m */,
+				407EEE5720B96623009FE00F /* NSDate+JZTimestamp.m */,
+				407EEE6020B96623009FE00F /* NSDate+JZTimestamp.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		407EEE2C20B96623009FE00F /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		407EEE3020B96623009FE00F /* FreeStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				407EEE3120B96623009FE00F /* audio_queue.h */,
+				407EEE3220B96623009FE00F /* Reachability.m */,
+				407EEE3320B96623009FE00F /* FSParseRssPodcastFeedRequest.m */,
+				407EEE3420B96623009FE00F /* FSXMLHttpRequest.h */,
+				407EEE3520B96623009FE00F /* http_stream.cpp */,
+				407EEE3620B96623009FE00F /* FSPlaylistItem.m */,
+				407EEE3720B96623009FE00F /* audio_stream.cpp */,
+				407EEE3820B96623009FE00F /* FSParsePlaylistRequest.h */,
+				407EEE3920B96623009FE00F /* id3_parser.cpp */,
+				407EEE3A20B96623009FE00F /* FSCheckContentTypeRequest.m */,
+				407EEE3B20B96623009FE00F /* stream_configuration.cpp */,
+				407EEE3C20B96623009FE00F /* file_stream.h */,
+				407EEE3D20B96623009FE00F /* input_stream.cpp */,
+				407EEE3E20B96623009FE00F /* input_stream.h */,
+				407EEE3F20B96623009FE00F /* file_output.h */,
+				407EEE4020B96623009FE00F /* FSAudioController.m */,
+				407EEE4120B96623009FE00F /* file_output.cpp */,
+				407EEE4220B96623009FE00F /* caching_stream.cpp */,
+				407EEE4320B96623009FE00F /* audio_stream.h */,
+				407EEE4420B96623009FE00F /* http_stream.h */,
+				407EEE4520B96623009FE00F /* FSPlaylistItem.h */,
+				407EEE4620B96623009FE00F /* FSXMLHttpRequest.m */,
+				407EEE4720B96623009FE00F /* FSParseRssPodcastFeedRequest.h */,
+				407EEE4820B96623009FE00F /* Reachability.h */,
+				407EEE4920B96623009FE00F /* FSAudioStream.mm */,
+				407EEE4A20B96623009FE00F /* id3_parser.h */,
+				407EEE4B20B96623009FE00F /* audio_queue.cpp */,
+				407EEE4C20B96623009FE00F /* FSCheckContentTypeRequest.h */,
+				407EEE4D20B96623009FE00F /* file_stream.cpp */,
+				407EEE4E20B96623009FE00F /* FSParsePlaylistRequest.m */,
+				407EEE4F20B96623009FE00F /* FSAudioStream.h */,
+				407EEE5020B96623009FE00F /* FreeStreamer.h */,
+				407EEE5120B96623009FE00F /* FSAudioController.h */,
+				407EEE5220B96623009FE00F /* stream_configuration.h */,
+				407EEE5320B96623009FE00F /* Info.plist */,
+				407EEE5420B96623009FE00F /* caching_stream.h */,
+			);
+			path = FreeStreamer;
+			sourceTree = "<group>";
+		};
+		407EEE8B20B9663A009FE00F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				407EEE8C20B9663B009FE00F /* libxml2.tbd */,
+				505B2A8620006711951E02C1 /* Pods_WZAudioPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		407EEDE020B96614009FE00F /* WZAudioPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 407EEE0D20B96614009FE00F /* Build configuration list for PBXNativeTarget "WZAudioPlayer" */;
+			buildPhases = (
+				420CC09D7639322261E2FD42 /* [CP] Check Pods Manifest.lock */,
+				407EEDDD20B96614009FE00F /* Sources */,
+				407EEDDE20B96614009FE00F /* Frameworks */,
+				407EEDDF20B96614009FE00F /* Resources */,
+				996E0D3251529EA246E8ECB9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WZAudioPlayer;
+			productName = WZAudioPlayer;
+			productReference = 407EEDE120B96614009FE00F /* WZAudioPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		407EEDF820B96614009FE00F /* WZAudioPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 407EEE1020B96614009FE00F /* Build configuration list for PBXNativeTarget "WZAudioPlayerTests" */;
+			buildPhases = (
+				407EEDF520B96614009FE00F /* Sources */,
+				407EEDF620B96614009FE00F /* Frameworks */,
+				407EEDF720B96614009FE00F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				407EEDFB20B96614009FE00F /* PBXTargetDependency */,
+			);
+			name = WZAudioPlayerTests;
+			productName = WZAudioPlayerTests;
+			productReference = 407EEDF920B96614009FE00F /* WZAudioPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		407EEE0320B96614009FE00F /* WZAudioPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 407EEE1320B96614009FE00F /* Build configuration list for PBXNativeTarget "WZAudioPlayerUITests" */;
+			buildPhases = (
+				407EEE0020B96614009FE00F /* Sources */,
+				407EEE0120B96614009FE00F /* Frameworks */,
+				407EEE0220B96614009FE00F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				407EEE0620B96614009FE00F /* PBXTargetDependency */,
+			);
+			name = WZAudioPlayerUITests;
+			productName = WZAudioPlayerUITests;
+			productReference = 407EEE0420B96614009FE00F /* WZAudioPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		407EEDD920B96614009FE00F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = wizet;
+				TargetAttributes = {
+					407EEDE020B96614009FE00F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					407EEDF820B96614009FE00F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 407EEDE020B96614009FE00F;
+					};
+					407EEE0320B96614009FE00F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 407EEDE020B96614009FE00F;
+					};
+				};
+			};
+			buildConfigurationList = 407EEDDC20B96614009FE00F /* Build configuration list for PBXProject "WZAudioPlayer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 407EEDD820B96614009FE00F;
+			productRefGroup = 407EEDE220B96614009FE00F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				407EEDE020B96614009FE00F /* WZAudioPlayer */,
+				407EEDF820B96614009FE00F /* WZAudioPlayerTests */,
+				407EEE0320B96614009FE00F /* WZAudioPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		407EEDDF20B96614009FE00F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407EEDF120B96614009FE00F /* LaunchScreen.storyboard in Resources */,
+				407EEE6820B96623009FE00F /* AudioData.plist in Resources */,
+				40DEFA5220BB81FF007E9864 /* icon_FM_DynamicLine.gif in Resources */,
+				407EEDEE20B96614009FE00F /* Assets.xcassets in Resources */,
+				407EEE8220B96624009FE00F /* Info.plist in Resources */,
+				407EEDEC20B96614009FE00F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407EEDF720B96614009FE00F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407EEE0220B96614009FE00F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		420CC09D7639322261E2FD42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WZAudioPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		996E0D3251529EA246E8ECB9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WZAudioPlayer/Pods-WZAudioPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/KTVCocoaHTTPServer/KTVCocoaHTTPServer.framework",
+				"${BUILT_PRODUCTS_DIR}/KTVHTTPCache/KTVHTTPCache.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KTVCocoaHTTPServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KTVHTTPCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WZAudioPlayer/Pods-WZAudioPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		407EEDDD20B96614009FE00F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407EEE7B20B96624009FE00F /* file_output.cpp in Sources */,
+				407EEE6E20B96624009FE00F /* JZPlaylistItem.m in Sources */,
+				407EEE6C20B96624009FE00F /* WZToast.m in Sources */,
+				407EEE7C20B96624009FE00F /* caching_stream.cpp in Sources */,
+				407EEDE920B96614009FE00F /* ViewController.m in Sources */,
+				407EEE8620B96624009FE00F /* JZFreeStreamerPlayer.m in Sources */,
+				407EEE6620B96623009FE00F /* JZFMAudioListModel.m in Sources */,
+				407EEE8120B96624009FE00F /* FSParsePlaylistRequest.m in Sources */,
+				407EEE7520B96624009FE00F /* audio_stream.cpp in Sources */,
+				407EEE7220B96624009FE00F /* FSParseRssPodcastFeedRequest.m in Sources */,
+				407EEE7A20B96624009FE00F /* FSAudioController.m in Sources */,
+				407EEE7920B96624009FE00F /* input_stream.cpp in Sources */,
+				407EEE6B20B96624009FE00F /* JZFMAudioPlaylistViewController.m in Sources */,
+				407EEE6720B96623009FE00F /* JZFMAudioTitleMarquee.m in Sources */,
+				407EEE7820B96624009FE00F /* stream_configuration.cpp in Sources */,
+				407EEE8520B96624009FE00F /* JZAudioPlayerItem.m in Sources */,
+				407EEDF420B96614009FE00F /* main.m in Sources */,
+				407EEE7620B96624009FE00F /* id3_parser.cpp in Sources */,
+				407EEE6D20B96624009FE00F /* JZFMDetailViewController.m in Sources */,
+				407EEE8420B96624009FE00F /* NSDate+JZTimestamp.m in Sources */,
+				407EEE7D20B96624009FE00F /* FSXMLHttpRequest.m in Sources */,
+				407EEE6F20B96624009FE00F /* JZAudioController.m in Sources */,
+				407EEE8A20B96624009FE00F /* JZFMAudioPlaylistView.m in Sources */,
+				407EEE9A20B96734009FE00F /* JZTransition_FadeDismiss.m in Sources */,
+				407EEE7F20B96624009FE00F /* audio_queue.cpp in Sources */,
+				407EEE9920B96734009FE00F /* JZTransition_FadePresent.m in Sources */,
+				407EEE8720B96624009FE00F /* JZCircularProgressLayer.m in Sources */,
+				407EEE7E20B96624009FE00F /* FSAudioStream.mm in Sources */,
+				407EEE7320B96624009FE00F /* http_stream.cpp in Sources */,
+				407EEE7120B96624009FE00F /* Reachability.m in Sources */,
+				407EEE8920B96624009FE00F /* JZFMDretailAudioPlayerControlView.m in Sources */,
+				407EEE7720B96624009FE00F /* FSCheckContentTypeRequest.m in Sources */,
+				407EEE8320B96624009FE00F /* JZAudioPlayer.m in Sources */,
+				407EEDE620B96614009FE00F /* AppDelegate.m in Sources */,
+				407EEE7020B96624009FE00F /* JZAudioPlayerManager.m in Sources */,
+				407EEE8020B96624009FE00F /* file_stream.cpp in Sources */,
+				407EEE8820B96624009FE00F /* JZRemoteCommandManager.m in Sources */,
+				407EEE7420B96624009FE00F /* FSPlaylistItem.m in Sources */,
+				407EEE6920B96623009FE00F /* JZFMDretailAudioPlayerContentView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407EEDF520B96614009FE00F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407EEDFE20B96614009FE00F /* WZAudioPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		407EEE0020B96614009FE00F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407EEE0920B96614009FE00F /* WZAudioPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		407EEDFB20B96614009FE00F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 407EEDE020B96614009FE00F /* WZAudioPlayer */;
+			targetProxy = 407EEDFA20B96614009FE00F /* PBXContainerItemProxy */;
+		};
+		407EEE0620B96614009FE00F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 407EEDE020B96614009FE00F /* WZAudioPlayer */;
+			targetProxy = 407EEE0520B96614009FE00F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		407EEDEA20B96614009FE00F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				407EEDEB20B96614009FE00F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		407EEDEF20B96614009FE00F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				407EEDF020B96614009FE00F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		407EEE0B20B96614009FE00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		407EEE0C20B96614009FE00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		407EEE0E20B96614009FE00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335547CF0B15491BBA19AE9B /* Pods-WZAudioPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MUPB6659U;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
+				INFOPLIST_FILE = WZAudioPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wizet.WZAudioPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		407EEE0F20B96614009FE00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E43A4984EC9D8B5021EC8E5 /* Pods-WZAudioPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MUPB6659U;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
+				INFOPLIST_FILE = WZAudioPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wizet.WZAudioPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		407EEE1120B96614009FE00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MUPB6659U;
+				INFOPLIST_FILE = WZAudioPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wizet.WZAudioPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZAudioPlayer.app/WZAudioPlayer";
+			};
+			name = Debug;
+		};
+		407EEE1220B96614009FE00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MUPB6659U;
+				INFOPLIST_FILE = WZAudioPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wizet.WZAudioPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WZAudioPlayer.app/WZAudioPlayer";
+			};
+			name = Release;
+		};
+		407EEE1420B96614009FE00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MUPB6659U;
+				INFOPLIST_FILE = WZAudioPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wizet.WZAudioPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WZAudioPlayer;
+			};
+			name = Debug;
+		};
+		407EEE1520B96614009FE00F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7MUPB6659U;
+				INFOPLIST_FILE = WZAudioPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wizet.WZAudioPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WZAudioPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		407EEDDC20B96614009FE00F /* Build configuration list for PBXProject "WZAudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407EEE0B20B96614009FE00F /* Debug */,
+				407EEE0C20B96614009FE00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		407EEE0D20B96614009FE00F /* Build configuration list for PBXNativeTarget "WZAudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407EEE0E20B96614009FE00F /* Debug */,
+				407EEE0F20B96614009FE00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		407EEE1020B96614009FE00F /* Build configuration list for PBXNativeTarget "WZAudioPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407EEE1120B96614009FE00F /* Debug */,
+				407EEE1220B96614009FE00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		407EEE1320B96614009FE00F /* Build configuration list for PBXNativeTarget "WZAudioPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				407EEE1420B96614009FE00F /* Debug */,
+				407EEE1520B96614009FE00F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 407EEDD920B96614009FE00F /* Project object */;
+}
