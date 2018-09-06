@@ -315,14 +315,10 @@
         [_audioController pause];
     } else if (_state == kFsAudioStreamPlaying) {
         ///为了处理：未缓存完-》手动拖动播放位置（seektime-〉暂停播放）-〉缓存完毕时状态变成kFsAudioStreamPlaying的bug
-        ///感觉要炸了
+        ///这种操作感觉要炸了...
         [_audioController pause];
         [_audioController pause];
         [_audioController pause];
-        dispatch_async(dispatch_get_main_queue(), ^{
-          
-        });
-        
     } else {
         ///重新播放
         [self playWithItem:_selectedPlaylistItem];

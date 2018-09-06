@@ -318,7 +318,6 @@
 		407EEE2A20B96623009FE00F /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				407EEE2C20B96623009FE00F /* Transition */,
 				407EEE3020B96623009FE00F /* FreeStreamer */,
 				407EEE5920B96623009FE00F /* JZCircularProgressLayer.h */,
 				407EEE5F20B96623009FE00F /* JZCircularProgressLayer.m */,
@@ -340,13 +339,6 @@
 				407EEE6020B96623009FE00F /* NSDate+JZTimestamp.h */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		407EEE2C20B96623009FE00F /* Transition */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Transition;
 			sourceTree = "<group>";
 		};
 		407EEE3020B96623009FE00F /* FreeStreamer */ = {

@@ -80,9 +80,9 @@
          make.bottom.equalTo(self.view);
     }];
  
-    [JZFMDetailGuideView showInView:self.view scrolledBlock:^(CGFloat x){
-        [_contentView scrollToX:x];
-    }];
+//    [JZFMDetailGuideView showInView:self.view scrolledBlock:^(CGFloat x){
+//        [_contentView scrollToX:x];
+//    }];
 }
 
 - (void)initData {
